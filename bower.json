@@ -1,0 +1,22 @@
+{
+  "name": "analitics",
+  "version": "1.0.0",
+  "authors": [
+    "vovanz <volodymyr.zub@gmail.com:>"
+  ],
+  "description": "analitics site",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "2.*",
+    "bootstrap": "3.3.*",
+
+  }
+}
