@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables"
 
 
 body
@@ -6,12 +6,193 @@ body
 	font-size: $font-size
 	line-height: $line-height
 
+.object 
+	max-height: 500px
+	max-width: 500px
+
 .top
+	font-family: "Oswald", sans-serif
 	background-image: url(../img/bg-header.jpg)
 	background-size: cover
 	height: 800px
 	.title
-		font-size: 200px;
-		font-family: "Oswald", sans-serif;
+		font-size: 200px
+	.subtitle
+		font-size: em(50)
+		color: #292929
 
-@import 'media';
+.about-us
+	h2
+		font-family: "Oswald", sans-serif
+		text-transform: uppercase
+		font-size: em(48)
+		color: #0a0a0a
+
+.about-us-infographics
+	text-align: center
+	position: relative
+
+.infographics-block
+	position: relative
+	display: inline-block
+	width: 33%
+	span
+		display: block
+		font-family: "Open Sans", sans-serif
+		font-size: em(48)
+		color: #191919
+		&:last-child
+			font-family: "Oswald", sans-serif
+			font-size: em(24)
+			color: #383838
+
+
+
+.icon-about-us-sprite
+	&:before
+		content: ""
+		position: relative
+		background-image: url(../img/sprite-about-us.png)
+		background-repeat: no-repeat
+		height: 145px
+		width: 157px
+		display: inline-block
+
+.icon-100
+	display: block
+	position: relative
+	top: 0
+	&:before
+		@extend .icon-about-us-sprite
+		background-position: 0 3px
+
+.icon-date
+	display: block
+	&:before
+		@extend .icon-about-us-sprite
+		background-position: 0 -177px
+
+.icon-group
+	display: block
+	&:before
+		@extend .icon-about-us-sprite
+		background-position: 0 -354px
+
+.company
+		background-color: #e8eaf6
+		padding-top: 50px
+		padding-bottom: 50px
+
+.outer-wrap-company
+		border: 1px solid red
+		max-width: 622px;
+		height: auto;
+		border-radius: 50%
+		position: relative
+		margin: 0 auto
+		.dot
+			position: absolute
+			width: 18px
+			height: 18px
+			border-radius: 50%;
+			top: 0
+			background-color: /* #898989 */ rgba(0, 0, 0, 0.2);
+			position: absolute
+			&:before
+				content: ""
+				width:  2px
+				height: 2px
+				background-color: green
+				position: absolute
+				border-radius: 50%
+				margin: auto
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+
+			&:nth-child(2)
+				top: -9px;
+				margin: auto;
+				left: 0;
+				right: 0;
+			&:nth-child(3)
+				top: 1.5%
+				margin: auto
+				left: 34%
+				right: 0
+			&:nth-child(4)
+				top: 10.2%
+				margin: auto
+				left: 64.4%
+				right: 0
+			&:nth-child(5)
+				top: 23.6%
+				margin: auto
+				left: 86.7%
+				right: 0
+			&:nth-child(6)
+				top: 60px
+				left: 60px
+			&:nth-child(7)
+				top: 70px
+				left: 70px
+			&:nth-child(8)
+				top: 80px
+				left: 80px
+			&:nth-child(9)
+				top: 90px
+				left: 90px
+			&:nth-child(10)
+				top: 100px
+				left: 100px
+			&:nth-child(11)
+				top: 110px
+				left: 110px
+			&:nth-child(12)
+				top: 120px
+				left: 120px
+			&:nth-child(13)
+				top: 130px
+				left: 130px
+			&:nth-child(14)
+				top: 140px
+				left: 140px
+			&:nth-child(15)
+				top: 150px
+				left: 150px
+			&:nth-child(16)
+				top: 160px
+				left: 160px
+			&:nth-child(17)
+				top: 170px
+				left: 170px
+			&:nth-child(18)
+				top: 180px
+				left: 180px
+			&:nth-child(19)
+				top: 190px
+				left: 190px
+
+
+.inner-wrap-company
+		position: relative;
+		max-width: 622px;
+		margin: 25px
+		border: 1px solid red
+		border-radius: 50%
+		.text-center-company
+			width: 242px;
+			height: 63px;
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
+			font-size: em(60)
+			color: #292929
+			text-transform: uppercase
+			font-family: "Oswald", sans-serif
+
+@import 'media'
