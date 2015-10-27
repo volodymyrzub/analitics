@@ -1,37 +1,76 @@
 @import "variables"
 
-
 body
 	font-family: $font-family
 	font-size: $font-size
 	line-height: $line-height
-
-.object 
-	max-height: 500px
-	max-width: 500px
-
+.menu-top
+	margin-top: 33px
+	a
+		font-size: em(18)
+		color: #292929
+		margin-left: 45px
+.btnClass
+	font-size: em(20)
+	display: inline-block
+	color: #0538a1
+	border: 3px solid #0538a1
+	border-radius: 6px
+	line-height: 1.6em
+	padding: 6px 25px
+	text-transform: uppercase
+	background-color: transparent
+	min-width: 145px
+	margin-top: 20px
+.btn-login
+	@extend .btnClass
+	color: #3c91e6
+	border: 3px solid #3c91e6
+	margin-right: 15px
+.btn-try-now
+	@extend .btnClass
 .top
 	font-family: "Oswald", sans-serif
 	background-image: url(../img/bg-header.jpg)
 	background-size: cover
 	height: 800px
+	padding-top: 100px
+	padding-bottom: 100px
 	.title
-		font-size: 200px
+		font-size: em(200)
+		margin-top: 40px
 	.subtitle
 		font-size: em(50)
+		font-size: "Open Sans", sans-serif
 		color: #292929
-
+		margin-top: 50px
+		margin-bottom: 100px
+.btn-top
+	font-family: 'Open Sans', sans-serif
+	font-size: em(44)
+	color: #0538a1
+	border: 4px solid #0538a1
+	border-radius: 10px
+	line-height: 1.6em
+	padding: 3px 75px
+	text-transform: uppercase
+	background-color: transparent
+	&:hover
+		color: #0538a1
 .about-us
+	margin-top: 50px
+	margin-bottom: 50px
 	h2
 		font-family: "Oswald", sans-serif
 		text-transform: uppercase
 		font-size: em(48)
 		color: #0a0a0a
-
+		padding: 40px
 .about-us-infographics
 	text-align: center
 	position: relative
-
+	margin-top: em(100)
+	margin-bottom: em(100)
 .infographics-block
 	position: relative
 	display: inline-block
@@ -45,9 +84,6 @@ body
 			font-family: "Oswald", sans-serif
 			font-size: em(24)
 			color: #383838
-
-
-
 .icon-about-us-sprite
 	&:before
 		content: ""
@@ -57,7 +93,6 @@ body
 		height: 145px
 		width: 157px
 		display: inline-block
-
 .icon-100
 	display: block
 	position: relative
@@ -65,125 +100,150 @@ body
 	&:before
 		@extend .icon-about-us-sprite
 		background-position: 0 3px
-
 .icon-date
 	display: block
 	&:before
 		@extend .icon-about-us-sprite
 		background-position: 0 -177px
-
 .icon-group
 	display: block
 	&:before
 		@extend .icon-about-us-sprite
 		background-position: 0 -354px
-
+.about-us-text
+	margin-top: 20px
+	font-size: em(18)
+	line-height: 1.6
+	p
+		margin: 0 0 30px
 .company
 		background-color: #e8eaf6
-		padding-top: 50px
-		padding-bottom: 50px
-
+		padding-top: 200px
+		padding-bottom: 200px
 .outer-wrap-company
-		border: 1px solid red
-		max-width: 622px;
-		height: auto;
+		border: 1px solid transparent
+		max-width: 622px
+		height: auto
 		border-radius: 50%
 		position: relative
 		margin: 0 auto
-		.dot
+		.dots
 			position: absolute
-			width: 18px
-			height: 18px
-			border-radius: 50%;
+			height: 1px
+			width: 1px
+			border: 1px solid black
 			top: 0
-			background-color: /* #898989 */ rgba(0, 0, 0, 0.2);
-			position: absolute
-			&:before
-				content: ""
-				width:  2px
-				height: 2px
-				background-color: green
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
+			.dot
 				position: absolute
+				width: 18px
+				height: 18px
 				border-radius: 50%
-				margin: auto
 				top: 0
-				bottom: 0
-				left: 0
-				right: 0
-
-			&:nth-child(2)
-				top: -9px;
-				margin: auto;
-				left: 0;
-				right: 0;
-			&:nth-child(3)
-				top: 1.5%
-				margin: auto
-				left: 34%
-				right: 0
-			&:nth-child(4)
-				top: 10.2%
-				margin: auto
-				left: 64.4%
-				right: 0
-			&:nth-child(5)
-				top: 23.6%
-				margin: auto
-				left: 86.7%
-				right: 0
-			&:nth-child(6)
-				top: 60px
-				left: 60px
-			&:nth-child(7)
-				top: 70px
-				left: 70px
-			&:nth-child(8)
-				top: 80px
-				left: 80px
-			&:nth-child(9)
-				top: 90px
-				left: 90px
-			&:nth-child(10)
-				top: 100px
-				left: 100px
-			&:nth-child(11)
-				top: 110px
-				left: 110px
-			&:nth-child(12)
-				top: 120px
-				left: 120px
-			&:nth-child(13)
-				top: 130px
-				left: 130px
-			&:nth-child(14)
-				top: 140px
-				left: 140px
-			&:nth-child(15)
-				top: 150px
-				left: 150px
-			&:nth-child(16)
-				top: 160px
-				left: 160px
-			&:nth-child(17)
-				top: 170px
-				left: 170px
-			&:nth-child(18)
-				top: 180px
-				left: 180px
-			&:nth-child(19)
-				top: 190px
-				left: 190px
-
-
+				background-color: #898989
+				position: absolute
+				&:before
+					content: ""
+					width:  2px
+					height: 2px
+					position: absolute
+					border-radius: 50%
+					margin: auto
+					top: 0
+					bottom: 0
+					left: 0
+					right: 0
+				.section-info
+					position: absolute
+					left: 10px
+					width: 164px
+					height: 55px
+					color: #898989
+					text-align: left
+					.numbers-section
+						position: relative
+						font-size: em(48)
+						font-family: 'Oswald', sans-serif
+						top: 2px
+					.text-section
+						display: inline-block
+						position: relative
+						font-size: em(14)
+						font-family: 'Open Sans', sans-serif
+						& > span
+							display: block
+							text-transform: uppercase
+				&:nth-child(1) .section-info
+					bottom: 33px
+					left: -159px
+				&:nth-child(2) .section-info
+					bottom: 68px
+					left: -75px
+				&:nth-child(3) .section-info
+					bottom: 33px
+					left: 6px
+				&:nth-child(4) .section-info
+					bottom: -19px
+					left: 30px
+				&:nth-child(5) .section-info
+					bottom: -19px
+					left: 30px
+				&:nth-child(6) .section-info
+					bottom: -19px
+					left: 30px
+				&:nth-child(7) .section-info
+					bottom: -19px
+					left: 30px
+				&:nth-child(8) .section-info
+					bottom: -19px
+					left: 30px
+				&:nth-child(9) .section-info
+					bottom: -19px
+					left: 30px
+				&:nth-child(10) .section-info
+					top: 33px
+					left: 6px
+				&:nth-child(11) .section-info
+					top: 68px
+					left: -74px
+				&:nth-child(12) .section-info
+					top: 33px
+					left: -159px
+				&:nth-child(13) .section-info
+					bottom: -19px
+					left: -177px
+					text-align: right
+				&:nth-child(14) .section-info
+					bottom: -19px
+					left: -177px
+					text-align: right
+				&:nth-child(15) .section-info
+					bottom: -19px
+					left: -177px
+					text-align: right
+				&:nth-child(16) .section-info
+					bottom: -19px
+					left: -177px
+					text-align: right
+				&:nth-child(17) .section-info
+					bottom: -19px
+					left: -177px
+					text-align: right
+				&:nth-child(18) .section-info
+					bottom: -19px
+					left: -177px
+					text-align: right
 .inner-wrap-company
-		position: relative;
-		max-width: 622px;
+		position: relative
+		max-width: 622px
 		margin: 25px
-		border: 1px solid red
 		border-radius: 50%
 		.text-center-company
-			width: 242px;
-			height: 63px;
+			width: 242px
+			height: 63px
 			position: absolute
 			top: 0
 			bottom: 0
@@ -194,5 +254,100 @@ body
 			color: #292929
 			text-transform: uppercase
 			font-family: "Oswald", sans-serif
-
+.footer
+	min-height: 100px
+	background-color: #0538a1
+	padding-bottom: 15px
+.menu-footer
+	a
+		display: inline-block
+		margin-right: 20px
+		font-size: em(18)
+		color: #ffffff
+		margin-top: 25px
+		&:last-child
+			margin-right: 0
+.copyright
+	display: block
+	color: #ffffff
+	font-size: 14px
+	margin-top: 25px
+.social-wrap
+	margin-top: 25px
+	text-align: right
+.ico-social
+	width: 21px
+	height: 25px
+	display: inline-block
+	position: relative
+	margin-right: 14px
+	text-align: right
+	&:last-child
+		margin-right: 0
+.ico-twitter
+	@extend .ico-social
+	&:before
+		background-image: url(../img/sprite-social-icon.png)
+		background-repeat: no-repeat
+		content: ""
+		position: absolute
+		width: 21px
+		height: 25px
+		top: 0
+		left: 0
+		background-position: 0 3px
+.ico-facebook
+	@extend .ico-social
+	&:before
+		background-image: url(../img/sprite-social-icon.png)
+		background-repeat: no-repeat
+		content: ""
+		position: absolute
+		width: 21px
+		height: 25px
+		top: 0
+		left: 0
+		background-position: 0 -35px
+.ico-youtube
+	@extend .ico-social
+	&:before
+		background-image: url(../img/sprite-social-icon.png)
+		background-repeat: no-repeat
+		content: ""
+		position: absolute
+		width: 21px
+		height: 25px
+		top: 0
+		left: 0
+		background-position: 0 -70px
+.ico-google
+	@extend .ico-social
+	&:before
+		background-image: url(../img/sprite-social-icon.png)
+		background-repeat: no-repeat
+		content: ""
+		position: absolute
+		width: 21px
+		height: 25px
+		top: 0
+		left: 0
+		background-position: 0 -106px
+.ico-linkedin
+	@extend .ico-social
+	&:before
+		background-image: url(../img/sprite-social-icon.png)
+		background-repeat: no-repeat
+		content: ""
+		position: absolute
+		width: 21px
+		height: 25px
+		top: 0
+		left: 0
+		background-position: 0 -143px
+.follow-us
+	display: block
+	color: #ffffff
+	font-size: 14px
+	text-align: right
+	padding-top: 16px
 @import 'media'
