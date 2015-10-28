@@ -1,11 +1,6 @@
 /**
  * Automatically executed if DOM is ready
  */
-$(function() {
-    $('a[href*=#]').anchor({
-        transitionDuration : 1200
-    });
-});
 
 /**
  * anchor.js - jQuery Plugin

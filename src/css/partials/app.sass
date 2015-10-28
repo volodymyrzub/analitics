@@ -27,8 +27,18 @@ body
 	color: #3c91e6
 	border: 3px solid #3c91e6
 	margin-right: 15px
+	&:hover
+		border: 3px solid #0538a1
+		background-color: #0538a1
+		color: #ffffff
+		transition: all .2s
 .btn-try-now
 	@extend .btnClass
+	&:hover
+		border: 3px solid #0538a1
+		background-color: #0538a1
+		color: #ffffff
+		transition: all .2s
 .top
 	font-family: "Oswald", sans-serif
 	background-image: url(../img/bg-header.jpg)
@@ -56,16 +66,23 @@ body
 	text-transform: uppercase
 	background-color: transparent
 	&:hover
-		color: #0538a1
-.about-us
-	margin-top: 50px
-	margin-bottom: 50px
+		border: 3px solid #0538a1
+		background-color: #0538a1
+		color: #ffffff
+		transition: all .2s
+.h2Class
 	h2
 		font-family: "Oswald", sans-serif
 		text-transform: uppercase
 		font-size: em(48)
 		color: #0a0a0a
 		padding: 40px
+		margin: 0
+		text-align: center
+.about-us
+	margin-top: 50px
+	margin-bottom: 50px
+	@extend .h2Class
 .about-us-infographics
 	text-align: center
 	position: relative
@@ -254,6 +271,383 @@ body
 			color: #292929
 			text-transform: uppercase
 			font-family: "Oswald", sans-serif
+.stakeholders
+	padding-top: 20px
+	padding-bottom: 120px
+	@extend .h2Class
+	h2
+		color: #292929!important
+		padding: 60px 0 100px 0
+.nav-pills
+	margin-left: -15px
+	margin-right: 40px
+	margin-bottom: 30px
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover
+	color: #ffffff
+	background-color: #243c8c
+.nav-pills>li>a
+	font-size: em(18)
+	color: #243c8c
+	border-radius: 0
+.nav>li>a
+	padding: 22px 15px 22px 100px
+	overflow: hidden
+	&:hover
+		background-color: #243c8c
+		color: #ffffff
+.nav>li
+	display: block
+	position: relative
+	padding-left: 100px
+.nav>li.active,
+.nav>li:hover,
+.nav>li:focus
+	background-color: #243c8c
+	position: relative
+.nav>li.active:before,
+.nav>li:hover:before,
+.nav>li:focus:before
+	content: ""
+	position: absolute
+	height: 0
+	width: 0
+	border-top: 31px solid transparent
+	border-bottom: 31px solid transparent
+	border-left: 40px solid #243c8c
+	right: -40px
+.nav>li>a
+	display: block
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		background-image: url(../img/sprite-stakeholders.png)
+		background-repeat: no-repeat
+		width: 62px
+		height: 62px
+		left: 0
+		top: 0
+.nav> li.active > a.ico-time:before,
+.nav> li.active > a.ico-time:focus:before,
+.nav > li > a.ico-time:hover:before
+	background-position: 0 10px
+	background-image: url(../img/sprite-stakeholders-white.png)
+.nav> li > a.ico-time:before,
+	background-position: 0 10px
+.nav> li.active > a.ico-link:before,
+.nav> li.active > a.ico-link:focus:before,
+.nav > li > a.ico-link:hover:before
+	background-position: -2px -53px
+	background-image: url(../img/sprite-stakeholders-white.png)
+.nav> li > a.ico-link:before
+	background-position: -2px -53px
+.nav> li.active > a.ico-search:before,
+.nav> li.active > a.ico-search:focus:before,
+.nav > li > a.ico-search:hover:before
+	background-position: -2px -115px
+	background-image: url(../img/sprite-stakeholders-white.png)
+.nav> li > a.ico-search:before
+	background-position: -2px -115px
+.nav> li.active > a.ico-folder:before,
+.nav> li.active > a.ico-folder:focus:before,
+.nav > li > a.ico-folder:hover:before
+	background-position: -2px -177px
+	background-image: url(../img/sprite-stakeholders-white.png)
+.nav> li > a.ico-folder:before
+	background-position: -2px -177px
+.nav> li.active > a.ico-graph:before,
+.nav> li.active > a.ico-graph:focus:before,
+.nav > li > a.ico-graph:hover:before
+	background-position: -2px -236px
+	background-image: url(../img/sprite-stakeholders-white.png)
+.nav> li > a.ico-graph:before
+	background-position: -2px -236px
+.nav> li.active > a.ico-chart:before,
+.nav> li.active > a.ico-chart:focus:before,
+.nav > li > a.ico-chart:hover:before
+	background-position: 1px -298px;
+	background-image: url(../img/sprite-stakeholders-white.png)
+.nav> li > a.ico-chart:before
+	background-position: 1px -298px
+.nav> li.active > a.ico-coordinat:before,
+.nav> li.active > a.ico-coordinat:focus:before,
+.nav > li > a.ico-coordinat:hover:before
+	background-position: 1px -361px
+	background-image: url(../img/sprite-stakeholders-white.png)
+.nav> li > a.ico-coordinat:before
+	background-position: 1px -361px
+.nav> li.active > a.ico-circle:before,
+.nav> li.active > a.ico-circle:focus:before,
+.nav > li > a.ico-circle:hover:before
+	background-position: 0px -426px
+	background-image: url(../img/sprite-stakeholders-white.png)
+.nav> li > a.ico-circle:before
+	background-position: 0px -426px
+.nav> li.active > a.ico-pack:before,
+.nav> li.active > a.ico-pack:focus:before,
+.nav > li > a.ico-pack:hover:before
+	background-position: 1px -485px
+	background-image: url(../img/sprite-stakeholders-white.png)
+.nav> li > a.ico-pack:before
+	background-position: 1px -485px
+.nav> li.active > a.ico-zoom:before,
+.nav> li.active > a.ico-zoom:focus:before,
+.nav > li > a.ico-zoom:hover:before
+	background-position: -4px -551px
+	background-image: url(../img/sprite-stakeholders-white.png)
+.nav> li > a.ico-zoom:before
+	background-position: -4px -551px
+.stakeholders
+	.tab-content
+		font-size: em(18)
+	h3
+		font-weight: bold
+		padding-bottom: 20px
+		margin-top: 0
+
+.pricing
+	padding-top: 20px
+	padding-bottom: 60px
+	background-color: #e8eaf6
+	@extend .h2Class
+	h2
+		color: #292929!important
+	.pricing-block
+		display: inline-block
+		vertical-align: top
+		margin: 20px
+		width: 420px
+		padding: 25px
+		background-color: #ffffff
+		&:last-child
+			background-color: #244099
+		.cup,
+		.jewel
+			display: block
+			margin: 25px auto
+			background-image: url(../img/sprite-pricing.png)
+			background-repeat: no-repeat
+			width: 91px
+			height: 65px
+		.cup
+			background-position: 0 0
+		.jewel
+			background-position: 0 -118px
+		.free-plan
+			color: #244099
+			font-size: em(36)
+			margin-bottom: 50px
+			padding: 6px 0
+		.premium-plan
+			color: #ffffff
+			font-size: em(36)
+			margin-bottom: 50px
+			& span
+				font-size: 48px
+		&:first-child
+			.item-checked,
+			.item-unchecked
+				display: block
+				position: relative
+				text-align: left
+				padding: 15px 45px
+				font-size: 18px
+				color: #7c7c7c
+				border-bottom: 1px solid #244099
+				&:after
+					content: ""
+					position: absolute
+					width: 20px
+					height: 16px
+					background-image: url(../img/sprite-pricing.png)
+					background-repeat: no-repeat
+					background-position: -43px -245px
+					right: 45px
+				&:nth-child(3)
+					border-top: 1px solid #244099
+			.item-unchecked:after
+				background-position: 0 0
+				background-position: -43px -221px
+		&:last-child
+			.item-checked
+				display: block
+				position: relative
+				text-align: left
+				padding: 15px 45px
+				font-size: 18px
+				color: #ffffff
+				border-bottom: 1px solid #ffffff
+				&:after
+					content: ""
+					position: absolute
+					width: 20px
+					height: 16px
+					background-image: url(../img/sprite-pricing.png)
+					background-repeat: no-repeat
+					background-position: -43px -277px
+					right: 45px
+				&:nth-child(3)
+					border-top: 1px solid #ffffff
+.btn-account
+	background-color: transparent
+	border: 3px solid #ffffff
+	border-radius: 4px
+	color: #ffffff
+	font-size: em(30)
+	width: 100%
+	padding: 15px
+	margin-top: 80px
+	margin-bottom: 40px
+	&.free
+		color: #244099
+		border: 3px solid #244099
+		&:hover
+			border: 3px solid #0538a1
+			background-color: #0538a1
+			color: #ffffff
+			transition: all .2s
+	&.premium
+		&:hover
+			color: #0538a1
+			border: 3px solid #ffffff
+			background-color: #ffffff
+			transition: all .2s
+.subscription
+	background-color: #448aff
+	text-align: center
+	padding-bottom: 50px
+	@extend .h2Class
+	h2
+		color: #ffffff!important
+	.subscription-text
+		font-size: 18px
+		color: #ffffff
+		line-height: 1.8
+.btn-subscription
+	font-size: em(30)
+	display: inline-block
+	color: #ffffff
+	border: 3px solid #ffffff
+	border-radius: 4px
+	line-height: 1.6em
+	padding: 6px 25px
+	text-transform: uppercase
+	background-color: transparent
+	min-width: 368px
+	&:hover
+		border: 3px solid #0538a1
+		background-color: #0538a1
+		color: #ffffff
+		transition: all .2s
+.infographics-subscription-wrap
+	margin-top: 30px
+	margin-bottom: 80px
+.infographics-subscription
+	display: inline-block
+	margin-right: 20px
+	margin-left: 20px
+	margin-top: 20px
+	vertical-align: top
+	&:nth-child(1) i
+		 background-position: 0 -5px
+	&:nth-child(2) i
+		background-position: -101px -6px
+	&:nth-child(3) i
+		background-position: -201px -6px
+	&:nth-child(4) i
+		background-position: -276px -4px
+	&:nth-child(5) i
+		 background-position: -376px -5px
+	&:nth-child(6) i
+		background-p
+	span
+		display: block
+		line-height: 1.8
+		color: #ffffff
+		font-size: em(18)
+.ico-subscription
+	background-image: url(../img/sprite-subscription.png)
+	background-repeat: no-repeat
+	display: inline-block
+	height: 55px
+	width: 55px
+.news
+	padding-top: 110px
+	color: #292929
+	font-size: 18px
+	line-height: 1.8
+	margin-bottom: 100px
+	@extend .h2Class
+	h2
+		color: #292929
+	.wrap-form
+		position: relative
+		width: 452px
+		margin: 0 auto
+		padding-top: 20px
+	input[type="text"]
+		display: block
+		color: #292929
+		background-color: #e8eaf6
+		padding: 10px
+		width: 280px
+		outline: none
+		border: none
+		font-size: 18px
+		margin: 15px 0 15px
+		font-style: italic
+		float: left
+		@include placeholder
+			color: #0538a1
+	.btn-send
+		background-color: #0538a1
+		font-size: em(24)
+		color: #ffffff
+		text-transform: uppercase
+		border: none
+		display: block
+		margin: 15px 0 15px
+		float: left
+		padding: 2px 50px
+		&:hover
+			transition: background-color .2s
+			background-color: #448AFF
+.news-blocks
+	margin-top: 60px
+.news-block
+	vertical-align: top
+.news-block
+	width: 320px
+	border: 1px solid #e8eaf6
+	display: inline-block
+	margin: 15px
+	color: #292929
+	.title-news
+		font-size: em(24)
+		font-family: 'Oswald', sans-serif
+		line-height: 1.1
+		text-align: left
+		padding: 15px 10px
+	.text-desc
+		line-height: 1
+		text-align: left
+		padding: 15px 10px
+	.additiinal-info
+		span
+			display: block
+			width: 50%
+			float: left
+			text-align: center
+		a
+			color: #0538a1
+			&:hover
+				text-decoration: none
+				color: #448aff
+		.date
+			font-size: 14px
+			margin-top: 6px
 .footer
 	min-height: 100px
 	background-color: #0538a1

@@ -16,6 +16,8 @@ var gulp = require('gulp'),
     reload = browserSync.reload,
     bourbon = require('node-bourbon');
 
+var listExtJs = ['src/js/partials/anchor.js'];
+
 var path = {
     build: {
         html: 'build/',
@@ -26,7 +28,8 @@ var path = {
     },
     src: {
         html: 'src/*.html',
-        js: ['src/js/partials/libs.js', 'src/js/partials/libs.js'],
+        js: ['src/js/partials/libs.js', 'src/js/main.js'],
+        extJs: listExtJs,
         style: 'src/css/style.sass',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
@@ -77,6 +80,15 @@ gulp.task('js:build', function () {
         .pipe(reload({stream: true}));
 });
 
+gulp.task('ext:js:build', function () {
+    gulp.src(path.src.extJs) 
+        .pipe(rigger()) 
+        .pipe(sourcemaps.init()) 
+        .pipe(uglify()) 
+        .pipe(gulp.dest(path.build.js))
+        .pipe(reload({stream: true}));
+});
+
 gulp.task('style:build', function () {
     gulp.src(path.src.style) 
         .pipe(sourcemaps.init())
@@ -115,10 +127,9 @@ gulp.task('build', [
     'js:build',
     'style:build',
     'fonts:build',
-    'image:build'
+    'image:build',
+    'ext:js:build'
 ]);
-
-
 gulp.task('watch', function(){
     watch([path.watch.html], function(event, cb) {
         gulp.start('html:build');
@@ -129,6 +140,9 @@ gulp.task('watch', function(){
     watch([path.watch.js], function(event, cb) {
         gulp.start('js:build');
     });
+    watch([path.watch.js], function(event, cb) {
+        gulp.start('ext:js:build');
+    });
     watch([path.watch.img], function(event, cb) {
         gulp.start('image:build');
     });
@@ -136,6 +150,4 @@ gulp.task('watch', function(){
         gulp.start('fonts:build');
     });
 });
-
-
 gulp.task('default', ['build', 'webserver', 'watch']);

@@ -10,20 +10,20 @@
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
 <body>
-	<header>
+	<header id="home">
 		<div class="container">
 			<div class="col-md-6 col-lg-offset-1 col-lg-6">
 				<nav class="menu-top">
-					<a href="#">Home</a>
-					<a href="#">Pricing</a>
-					<a href="#">Subscribe</a>
+					<a href="#home" class="anchor">Home</a>
+					<a href="#pricing" class="anchor">Pricing</a>
+					<a href="#subscription" class="anchor">Subscribe</a>
 					<a href="#">About</a>
-					<a href="#">News</a>
+					<a href="#news" class="anchor">News</a>
 				</nav>
 			</div>
 			<div class="col-md-6 col-lg-4 text-center">
@@ -284,18 +284,219 @@
 			</div>
 		</div>
 	</section>
+	<section class="stakeholders">
+		<h2>Stakeholders</h2>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<ul class="nav nav-pills nav-stacked">
+						<li role="presentation" class="active"><a class="ico-time" data-toggle="pill" href="#1" >Proin gravida nibh vel velit auctor aliquet</a></li>
+						<li role="presentation"><a class="ico-link" data-toggle="pill" href="#2">Proin gravida nibh vel velit auctor aliquet</a></li>
+						<li role="presentation"><a class="ico-search" data-toggle="pill" href="#3">Proin gravida nibh vel velit auctor aliquet</a></li>
+						<li role="presentation"><a class="ico-folder" data-toggle="pill" href="#4">Proin gravida nibh vel velit auctor aliquet</a></li>
+						<li role="presentation"><a class="ico-graph" data-toggle="pill" href="#5">Proin gravida nibh vel velit auctor aliquet</a></li>
+						<li role="presentation"><a class="ico-chart" data-toggle="pill" href="#6">Proin gravida nibh vel velit auctor aliquet</a></li>
+						<li role="presentation"><a class="ico-coordinat" data-toggle="pill" href="#7">Proin gravida nibh vel velit auctor aliquet</a></li>
+						<li role="presentation"><a class="ico-circle" data-toggle="pill" href="#8">Proin gravida nibh vel velit auctor aliquet</a></li>
+						<li role="presentation"><a class="ico-pack" data-toggle="pill" href="#9">Proin gravida nibh vel velit auctor aliquet</a></li>
+						<li role="presentation"><a class="ico-zoom" data-toggle="pill" href="#10">Proin gravida nibh vel velit auctor aliquet</a></li>
+					</ul>
+
+				</div>
+				<div class="col-md-6">
+					<div class="tab-content">
+						<div id="1" class="tab-pane fade in active">
+							<h3>Proin gravida nibh vel <br>velit auctor aliquet.</h3>
+							<p>
+								Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+							</p>
+							<p>
+								<img src="img/content/diagrama.jpg" class="img-responsive">
+							</p>
+							<p>
+								Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. 
+							</p>
+						</div>
+						<div id="2" class="tab-pane fade">
+							<h3>Menu 2</h3>
+							<p>Some content in menu 2.</p>
+						</div>
+						<div id="3" class="tab-pane fade">
+							<h3>Menu 3</h3>
+							<p>Some content in menu 3.</p>
+						</div>
+						<div id="4" class="tab-pane fade">
+							<h3>Menu 4</h3>
+							<p>Some content in menu 4.</p>
+						</div>
+						<div id="5" class="tab-pane fade">
+							<h3>Menu 5</h3>
+							<p>Some content in menu 5.</p>
+						</div>
+						<div id="6" class="tab-pane fade">
+							<h3>Menu 6</h3>
+							<p>Some content in menu 6.</p>
+						</div>
+						<div id="7" class="tab-pane fade">
+							<h3>Menu 7</h3>
+							<p>Some content in menu 7.</p>
+						</div>
+						<div id="8" class="tab-pane fade">
+							<h3>Menu 8</h3>
+							<p>Some content in menu 8.</p>
+						</div>
+						<div id="9" class="tab-pane fade">
+							<h3>Menu 9</h3>
+							<p>Some content in menu 9.</p>
+						</div>
+						<div id="10" class="tab-pane fade">
+							<h3>Menu 10</h3>
+							<p>Some content in menu 10.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="pricing" class="pricing">
+		<h2>Pricing</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center text-center">
+					<div class="pricing-block">
+					<i class="cup"></i>
+						<div class="free-plan">FREE account</div>
+						<span class="item-unchecked">Some text here</span>
+						<span class="item-unchecked">Some text here</span>
+						<span class="item-checked">Some text here</span>
+						<span class="item-checked">Some text here</span>
+						<button class="btn-account free">Try FREE account</button>
+					</div>
+					<div class="pricing-block">
+						<i class="jewel"></i>
+						<div class="premium-plan">
+							$<span>12</span> per/month
+						</div>
+						<span class="item-checked">Some text here</span>
+						<span class="item-checked">Some text here</span>
+						<span class="item-checked">Some text here</span>
+						<span class="item-checked">Some text here</span>
+						<button class="btn-account premium">Try PREMIUM account</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="subscription" class="subscription">
+		<h2>subscription</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p class="subscription-text">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. </p>
+					<div class="infographics-subscription-wrap">
+						<div class="infographics-subscription">
+							<i class="ico-subscription"></i>
+							<span>Create analysis</span>
+						</div>
+						<div class="infographics-subscription">
+							<i class="ico-subscription"></i>
+							<span>Regulary metrics</span>
+						</div>
+						<div class="infographics-subscription">
+							<i class="ico-subscription"></i>
+							<span>Integrate <br>your own data</span>
+						</div>
+						<div class="infographics-subscription">
+							<i class="ico-subscription"></i>
+							<span>Define <br>your universe</span>
+						</div>
+						<div class="infographics-subscription">
+							<i class="ico-subscription"></i>
+							<span>xx sectors,<br> xx stocks</span>
+						</div>
+						<div class="infographics-subscription">
+							<i class="ico-subscription"></i>
+							<span>xx termes and<br> xx metrics</span>
+						</div>
+					</div>
+					<div class="subscription-wrap-btn text-center">
+						<button class="btn-subscription">subscribe</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="news" class="news">
+		<h2>News</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-offset-1 col-lg-10">
+					<div class="row">
+						<div class="col-md-offset-1 col-md-10 text-center">
+							<p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+							<div class="clearfix wrap-form">
+								<form action="" method="get">
+									<input type="text" name="email" placeholder="Enter your email">
+									<input type="submit" value="send" class="btn-send">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="news-blocks text-center">
+				<div class="news-block">
+					<img src="../img/content/news-1.jpg" class="img-responsive">
+					<div class="title-news">
+						Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+					</div>
+					<div class="text-desc">
+						<p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					</div>
+					<div class="additiinal-info clearfix">
+						<span class="date">24.09.2015</span>
+						<span><a href="#">Read more >></a></span>
+					</div>
+				</div>
+				<div class="news-block">
+					<div class="title-news">
+						<br>
+						Lorem Ipsum. Proin gravida nibh vel velit auctor aliq
+					</div>
+					<div class="text-desc">
+						<p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						<p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						<p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p> 
+					</div>
+					<div class="additiinal-info clearfix">
+						<span class="date">24.09.2015</span>
+						<span class="read-more"><a href="#">Read more >></a></span>
+					</div>
+				</div>
+				<div class="news-block">
+					<img src="../img/content/news-2.jpg" class="img-responsive">
+					<div class="title-news">Lorem Ipsum. Proin gravida nibh vel velit auctor aliq</div>
+					<div class="text-desc"><p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p> </div>
+					<div class="additiinal-info clearfix">
+						<span class="date">24.09.2015</span>
+						<span><a href="#">Read more >></a></span>
+					</div>
+				</div>
+			</div>
+		</section>
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 col-lg-offset-1 col-lg-10">
 					<div class="col-md-offset-1 col-md-8 col-lg-offset-1 col-lg-8">
 						<div class="menu-footer">
-							<a href="#">Home</a>
-							<a href="#">Pricing</a>
-							<a href="#">Subscribe</a>
+							<a href="#home" class="anchor">Home</a>
+							<a href="#pricing" class="anchor">Pricing</a>
+							<a href="#subscription" class="anchor">Subscribe</a>
 							<a href="#">About</a>
-							<a href="#">News</a>
-							<a href="#">Terms & Conditions</a>
+							<a href="#news" class="anchor">News</a>
+							<a href="#" class="anchor">Terms & Conditions</a>
 							<span class="copyright">Copyright 2015 EXL. All rights reserved.</span>
 						</div>
 					</div>
@@ -314,6 +515,7 @@
 		</div>
 	</footer>
 	<script src="js/libs.js"></script>
+	<script src="js/anchor.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

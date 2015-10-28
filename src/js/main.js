@@ -1,4 +1,9 @@
 $(document).ready(function() {
+	$(function() {
+	    $('a[href*=#].anchor').anchor({
+	        transitionDuration : 1200
+	    });
+	});
 	function setPositionOnCrircle(elem, degree, radius) {
 		var 
 				positionX = 0,
