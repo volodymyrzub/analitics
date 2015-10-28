@@ -27,11 +27,27 @@
 				</nav>
 			</div>
 			<div class="col-md-6 col-lg-4 text-center">
-				<button class="btn-login">Log In</button>
-				<button class="btn-try-now">Try Now</button>
+				<button class="btn-login" data-toggle="modal" data-target=".login-popup">Log In</button>
+				<button class="btn-try-now" data-toggle="modal" data-target=".try-now-popup">Try Now</button>
 			</div>
 		</div>
 	</header>
+	<!-- start popups login, try now -->
+		<div class="modal fade login-popup" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					modal login
+				</div>
+			</div>
+		</div>
+		<div class="modal fade try-now-popup" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					modal try now
+				</div>
+			</div>
+		</div>
+	<!-- end popups login, try now -->
 	<section class="top">
 		<div class="container">
 			<div class="row">
@@ -40,7 +56,7 @@
 					<div class="subtitle">
 						The next generation of ESG analysis
 					</div>
-					<button class="btn btn-top">try now</button>
+					<button class="btn btn-top" data-toggle="modal" data-target=".try-now-popup">try now</button>
 				</div>
 			</div>
 		</div>
@@ -420,8 +436,39 @@
 						</div>
 					</div>
 					<div class="subscription-wrap-btn text-center">
-						<button class="btn-subscription">subscribe</button>
+						<button class="btn-subscription" data-toggle="modal" data-target=".subscribe-popup">subscribe</button>
 					</div>
+					<!-- start popup subsribe -->
+					<div class="modal fade subscribe-popup" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+						<div class="modal-dialog modal-sm">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">Subscribe</h4>
+								</div>
+								<div class="modal-body">
+									<label for="first-name">First name</label>
+									<input type="text" name="firs-name" id="first-name">
+
+									<label for="last-name">Last name</label>
+									<input type="text" name="last-name" id="last-name">
+
+									<label for="company">Company</label>
+									<input type="text" name="company" id="company">
+
+									<label for="Email">Email</label>
+									<input type="text" name="email" id="email">
+
+									<label for="card-number">Card number</label>
+									<input type="text" name="card-number" id="card-number">
+
+									<label for="first-name">First name</label>
+									<input type="text" name="firs-name" id="first-name">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end popup subsribe -->
 				</div>
 			</div>
 		</div>
